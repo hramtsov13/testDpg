@@ -1,0 +1,118 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(".././img/background.jpg");
+  background-size: contain;
+}
+
+.container__name {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: 0px 4px 19px rgba(0, 0, 0, 0.97);
+  text-align: center;
+  margin-top: 90px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 98px;
+  background-color: #171929;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 27px;
+}
+
+.signup-form__notification {
+  margin-top: 41px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.signup-form__required {
+  margin-top: 11px;
+  align-self: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #797EA3;
+}
+
+.signup-form__item {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 45px 0 45px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #797EA3;
+}
+
+.signup-form__item:first-of-type {
+  padding-top: 10px;
+}
+
+.signup-form__input {
+  margin-top: 7px;
+  border: none;
+  border-bottom: 1px solid #3F4363;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff
+}
+
+
+.signup-form__btn {
+  margin: 36px 134px 41px;
+  padding: 11px 40px;
+  background: #2C2F47;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url(https://fonts.gstatic.com/s/roboto/v15/Jzo62I39jc0gQRrbndN6nXYhjbSpvc47ee6xR_80Hnw.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfSZ2oysoEQEeKwjgmXLRnTc.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v15/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format("truetype");
+}

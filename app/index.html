@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="container__name">Hello</h1>
+      <form class="signup-form">
+        <p class="signup-form__notification">
+          For business enquiries please use the form below
+        </p>
+        <span class="signup-form__required"><sup>*</sup>Required</span>
+
+        <div class="signup-form__item">
+          <label for="name">Name<sup>*</sup></label>
+          <input
+            class="signup-form__input"
+            type="text"
+            name="Name"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="signup-form__item">
+          <label for="company">Company<sup>*</sup></label>
+          <input
+            class="signup-form__input"
+            type="text"
+            name="company"
+            required
+          />
+        </div>
+
+        <div class="signup-form__item">
+          <label for="email">Email<sup>*</sup></label>
+          <input
+            class="signup-form__input"
+            type="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="signup-form__item">
+          <label for="phone">Phone</label>
+          <input class="signup-form__input" type="tel" name="phone" />
+        </div>
+
+        <div class="signup-form__item">
+          <label for="subject">Subject</label>
+          <input class="signup-form__input" type="text" name="subject" />
+        </div>
+
+        <div class="signup-form__item">
+          <label for="message">Message<sup>*</sup></label>
+          <input
+            class="signup-form__input"
+            type="text"
+            name="message"
+            multiple
+            required
+          />
+        </div>
+        <div class="signup-form__item">
+          <label for="id1"
+            ><input
+              class="signup-form__input checkbox"
+              type="checkbox"
+              name="message"
+              id="id1"
+              required
+            />I accept <a href="#">Terms and Privacy Policy</a></label
+          >
+        </div>
+        <button class="signup-form__btn">Send</button>
+      </form>
+    </section>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>

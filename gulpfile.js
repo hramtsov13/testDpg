@@ -49,7 +49,7 @@ const compileScript = () => {
 const compileStyle = () => {
   var plugins = [autoprefixer(), cssnano()];
   return gulp
-    .src(["app/scss/style.scss", "app/libs/bootstrap-grid.css"])
+    .src(["app/scss/style.scss"])
     .pipe(
       sass({
         outputStyle: "expand",
