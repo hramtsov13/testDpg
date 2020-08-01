@@ -12,7 +12,8 @@
       <h1 class="container__name">Hello</h1>
       <form class="signup-form">
         <p class="signup-form__notification">
-          For business enquiries please use the form below
+          For business enquiries please <br />
+          use the form below
         </p>
         <span class="signup-form__required"><sup>*</sup>Required</span>
 
@@ -68,15 +69,18 @@
           />
         </div>
         <div class="signup-form__item">
-          <label for="id1"
-            ><input
-              class="signup-form__input checkbox"
+          <label class="checkbox">
+            <input
+              class="signup-form__input checkbox__input"
               type="checkbox"
               name="message"
-              id="id1"
               required
-            />I accept <a href="#">Terms and Privacy Policy</a></label
-          >
+            />
+            <span class="checkbox__fake"></span>
+            <span class="checkbox__agreement">
+              I accept <a href="#">Terms and Privacy Policy</a>
+            </span>
+          </label>
         </div>
         <button class="signup-form__btn">Send</button>
       </form>

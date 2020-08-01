@@ -80,6 +80,54 @@ body {
   color: #ffffff
 }
 
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__fake {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: #2C2F47;
+  border-radius: 8px;
+}
+
+.checkbox__fake::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 11px;
+  background-image: url(.././img/checked.svg);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.checkbox__input:checked+.checkbox__fake::before {
+  opacity: 0.7;
+}
+
+.checkbox__agreement {
+  margin-left: 12px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #797EA3;
+}
+
+.checkbox__agreement a {
+  color: #b9bee5;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
 
 .signup-form__btn {
   margin: 36px 134px 41px;
